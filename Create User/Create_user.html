@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new user</title>
+    <link rel="stylesheet" href="Create_user.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class="user-menu"><a href="../Homepage/homepage.html">Home</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#about">About Us</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#services">Services</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#menu">Menu</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#chef">Our Chefs</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#reservation">Book your table</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#gallery">Restaurant Images</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#testimonials">Customer Review</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#contact">Contact Us</a></li>
+                    <li class="user-menu" style="border-top: 1px solid gray; padding-top: 10px; margin-top: 10px;">
+                        <a href="#" id="user-menu-toggle">User <span class="toggle-icon">+</span></a>
+                        <ul class="submenu">
+                            <li><a href="../User Profile/User_profile.html">Profile</a></li>
+                            <li><a href="../User List/User_list_section.html">List</a></li>
+                            <li><a href="../Create User/Create_user.html">Create</a></li>
+                            <li><a href="../User Account/User_account.html">Account</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        
+            <div class="logout">
+                <button id="logout-btn">Logout</button>
+            </div>
+        </aside>
+
+        <main class="new-user-section">
+            <h1>Create a new user</h1>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a href="#">User</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">New user</li>
+                </ol>
+            </nav>
+
+            <div class="new-user-form">
+                <div class="photo-upload">
+                    <div class="upload-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Upload photo</p>
+                    </div>
+                    <p class="file-types">Allowed *.jpeg, *.jpg, *.png, *.gif<br>max size of 3 Mb</p>
+                </div>
+                <div class="form-fields">
+                    <div class="form-row">
+                        <input type="text" placeholder="Full name">
+                        <input type="email" placeholder="Email address">
+                    </div>
+                    <div class="form-row">
+                        <div class="phone-input">
+                            <select>
+                                <option value="us">🇺🇸</option>
+                                <!-- Add more country options as needed -->
+                            </select>
+                            <input type="tel" placeholder="Enter phone number" style="width: 110%;">
+                        </div>
+                        <select>
+                            <option value="" style="width: 50%;">Choose a country</option>
+                            <!-- Add country options -->
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="State/region">
+                        <input type="text" placeholder="City">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Address">
+                        <input type="text" placeholder="Zip/code">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Company">
+                        <input type="text" placeholder="Role">
+                    </div>
+                </div>
+            </div>
+
+            <div class="email-verification">
+                <label>
+                    Email verified
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+                <p>Disabling this will automatically send the user a verification email</p>
+            </div>
+
+            <button class="create-user-btn">Create user</button>
+        </main>
+    </div>
+    <script src="Create_user.js"></script>
+</body>
+
+</html>

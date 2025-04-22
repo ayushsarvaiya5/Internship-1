@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="User_account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class="user-menu"><a href="../Homepage/homepage.html">Home</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#about">About Us</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#services">Services</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#menu">Menu</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#chef">Our Chefs</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#reservation">Book your table</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#gallery">Restaurant Images</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#testimonials">Customer Review</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#contact">Contact Us</a></li>
+                    <li class="user-menu" style="border-top: 1px solid gray; padding-top: 10px; margin-top: 10px;">
+                        <a href="#" id="user-menu-toggle">User <span class="toggle-icon">+</span></a>
+                        <ul class="submenu">
+                            <li><a href="../User Profile/User_profile.html">Profile</a></li>
+                            <li><a href="../User List/User_list_section.html">List</a></li>
+                            <li><a href="../Create User/Create_user.html">Create</a></li>
+                            <li><a href="../User Account/User_account.html">Account</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="logout">
+                <button id="logout-btn">Logout</button>
+            </div>
+        </aside>
+
+        <main class="account-section">
+            <h1>Account</h1>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a href="#">User</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Account</li>
+                </ol>
+            </nav>
+
+            <div class="tabs">
+                <button class="tab-btn active">General</button>
+                <button class="tab-btn">Billing</button>
+                <button class="tab-btn">Notifications</button>
+                <button class="tab-btn">Social links</button>
+                <button class="tab-btn">Security</button>
+            </div>
+
+            <div class="account-form">
+                <div class="photo-upload">
+                    <div class="upload-placeholder">
+                        <img src="../Images/avatar_1.webp" alt="Profile Picture" id="profile-pic">
+                    </div>
+                    <p class="file-types">Allowed *.jpeg, *.jpg, *.png, *.gif<br>max size of 3 Mb</p>
+                    <div class="profile-controls">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        <span>Public profile</span>
+                    </div>
+                    <button class="delete-user">Delete user</button>
+                </div>
+                <div class="form-fields">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" value="Lucian Obrien">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" value="lucian@gmail.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone number</label>
+                            <div class="phone-input">
+                                <select>
+                                    <option value="IN">Ind</option>
+                                </select>
+                                <input type="tel" id="phone" value="(+91) 12345 67890">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country">
+                                <option value="IN" class="country_name">India</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="state">State/Region</label>
+                            <input type="text" id="state" value="Gujarat">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" value="Anand">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" value="404, Tech Elecone">
+                        </div>
+                        <div class="form-group">
+                            <label for="zipcode">Zip/Code</label>
+                            <input type="text" id="zipcode" value="388001">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="about">About</label>
+                            <textarea id="about" rows="4">Praesent turpis. Phasellus viverra nulla ut metus varius laoreet. Phasellus tempus.</textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <!-- <div class="email-verification" style="display: block;">
+                            <label for="verify-email">
+                                <div class="switch">
+                                    <input type="checkbox" id="verify-email">
+                                    <span class="slider round"></span>
+                                </div>
+                                Verify Email
+                            </label>
+                            <p>Disabling this will automatically send the user a verification email</p>
+                        </div>
+                        
+                        <div class="email-verification">
+                            <label for="ban-user">
+                                <div class="switch">
+                                    <input type="checkbox" id="ban-user">
+                                    <span class="slider round"></span>
+                                </div>
+                                Ban User
+                            </label>
+                            <p>Apply disable account</p>
+                        </div> -->
+                        
+                    </div>
+                    <div class="form-row">
+                        <button class="save-changes-btn">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="email-verification-container">
+                <div class="email-verification" id="first">
+                    <label for="verify-email">
+                        Verify Email 
+                        <div class="switch">
+                            <input type="checkbox" id="verify-email" checked>
+                            <span class="slider round"></span>
+                        </div>
+                    </label>
+                    <p>Disabling this will automatically send the user a verification email</p>
+                </div>
+            
+                <div class="email-verification">
+                    <label for="ban-user">
+                        Ban User
+                        <div class="switch">
+                            <input type="checkbox" id="ban-user">
+                            <span class="slider round"></span>
+                        </div>
+                    </label>
+                    <p>Apply disable account</p>
+                </div>
+            </div>            
+        </main>
+    </div>
+    <script src="User_account.js"></script>
+</body>
+
+</html>

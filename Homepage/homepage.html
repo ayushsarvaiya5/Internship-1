@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class="user-menu"><a href="../Homepage/homepage.html" class="active">Home</a></li>
+                    <li class="user-menu"><a href="#about">About Us</a></li>
+                    <li class="user-menu"><a href="#services">Services</a></li>
+                    <li class="user-menu"><a href="#menu">Menu</a></li>
+                    <li class="user-menu"><a href="#chef">Our Chefs</a></li>
+                    <li class="user-menu"><a href="#reservation">Book your table</a></li>
+                    <li class="user-menu"><a href="#gallery">Restaurant Images</a></li>
+                    <li class="user-menu"><a href="#testimonials">Customer Review</a></li>
+                    <li class="user-menu"><a href="#contact">Contact Us</a></li>
+                    <li class="user-menu" style="border-top: 1px solid gray; padding-top: 10px; margin-top: 10px;">
+                        <a href="#" id="user-menu-toggle">User <span class="toggle-icon">+</span></a>
+                        <ul class="submenu" id="submenu" style="display: none;">
+                            <li><a href="../User Profile/User_profile.html">Profile</a></li>
+                            <li><a href="../User List/User_list_section.html">List</a></li>
+                            <li><a href="../Create User/Create_user.html">Create</a></li>
+                            <li><a href="../User Account/User_account.html">Account</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="logout">
+                <button id="logout-btn">Logout</button>
+            </div>
+        </aside>
+
+        <main class="new-user-section">
+            <header class="hero-header">
+                <h1 class="logo"><i class="fa fa-utensils me-3"></i> RESTAURANTLY</h1>
+                <img src="../Images/bg_2.jpg" alt="Restaurant Hero Image" class="hero-image">
+                <div class="hero-content">
+                    <h1>Welcome to Our Restaurant</h1>
+                    <p>Experience the best culinary delights in the city</p>
+                    <a href="#about" class="hero-btn">Discover More</a>
+                </div>
+            </header>
+
+            <section id="about" class="about-section">
+                <div class="about-content">
+                    <h2>About Us</h2>
+                    <p>Our restaurant offers a variety of delicious dishes prepared with fresh ingredients and a touch
+                        of love. Join us for a memorable dining experience.</p>
+                </div>
+                <img src="../Images/about-bg.jpg" alt="About Us Image" class="about-image">
+            </section>
+
+            <section id="services" class="services-section">
+                <h2>Our Services</h2>
+                <div class="services">
+                    <div class="service">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Quality Food</h3>
+                        <p>We serve the finest dishes made from the freshest ingredients.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <h3>Outdoor Dining</h3>
+                        <p>Experience our delicious food in a pleasant outdoor setting.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-truck"></i>
+                        <h3>Food Delivery</h3>
+                        <p>Get your favorite dishes delivered to your doorstep.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-birthday-cake"></i>
+                        <h3>Event Catering</h3>
+                        <p>We cater for all kinds of events, making them memorable.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-music"></i>
+                        <h3>Live Music</h3>
+                        <p>Enjoy live music performances every weekend.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fas fa-glass-cheers"></i>
+                        <h3>Special Events</h3>
+                        <p>Host your special events with us for a memorable experience.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="menu" class="menu-section">
+                <h2>Our Menu</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="../Images/specials-3.png" alt="Menu Item">
+                        <h3>Grilled Pasta</h3>
+                        <p>Delicious grilled Pasta served with fresh vegetables.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Images/specials-2.png" alt="Menu Item">
+                        <h3>Vegetarian Pasta</h3>
+                        <p>Freshly made pasta with a mix of seasonal vegetables.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Images/specials-1.png" alt="Menu Item">
+                        <h3>Seafood Platter</h3>
+                        <p>A variety of seafood served with dipping sauces.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Images/specials-4.png" alt="Menu Item">
+                        <h3>Classic Burger</h3>
+                        <p>Our signature burger with juicy beef patty, cheese, and fresh toppings.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Images/new_food.png" alt="Menu Item">
+                        <h3>Fresh Salad</h3>
+                        <p>Healthy salad with mixed greens, cherry tomatoes, and balsamic vinaigrette.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Images/new_food_2.png" alt="Menu Item">
+                        <h3>Sushi Platter</h3>
+                        <p>An assortment of fresh sushi rolls with soy sauce and wasabi.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Images/specials-2.png" alt="Menu Item">
+                        <h3>Vegetarian Pasta</h3>
+                        <p>Freshly made pasta with a mix of seasonal vegetables.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Images/specials-1.png" alt="Menu Item">
+                        <h3>Seafood Platter</h3>
+                        <p>A variety of seafood served with dipping sauces.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Images/specials-3.png" alt="Menu Item">
+                        <h3>Grilled Pasta</h3>
+                        <p>Delicious grilled Pasta served with fresh vegetables.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chef Section -->
+            <section id="chef" class="chef-section">
+                <h2>Our Master Chefs</h2>
+                <div class="chefs">
+                    <div class="chef">
+                        <img src="../Images/chef-1.jpg" alt="Chef Image">
+                        <h3>John Smooth</h3>
+                        <p>Restaurant Owner</p>
+                    </div>
+                    <div class="chef">
+                        <img src="../Images/chef-2.jpg" alt="Chef Image">
+                        <h3>Rebeca Welson</h3>
+                        <p>Head Chef</p>
+                    </div>
+                    <div class="chef">
+                        <img src="../Images/chef-3.jpg" alt="Chef Image">
+                        <h3>Kharl Branyt</h3>
+                        <p>Chef</p>
+                    </div>
+                    <div class="chef">
+                        <img src="../Images/chef-4.jpg" alt="Chef Image">
+                        <h3>Luke Simon</h3>
+                        <p>Chef</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reservation" class="reservation-section">
+                <div class="reservation-content">
+                    <img src="../Images/reserved_3.jpg" alt="Reservation Image" class="reservation-image">
+                    <div class="reservation-form">
+                        <div class="text">
+                            <h2 style="display: inline;">Reservation </h2>
+                            <span>
+                                <h3 style="display: inline; position: relative; top: -3px;"> - Book your table</h3>
+                            </span>
+                        </div>
+                        <form action="#" method="post" class="form">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="datetime">Date & Time</label>
+                            <input type="datetime-local" id="datetime" name="datetime" required>
+
+                            <label for="people">No Of People</label>
+                            <input type="number" id="people" name="people" min="1" required>
+
+                            <label for="request">Special Request</label>
+                            <textarea id="request" name="request" rows="4"></textarea>
+
+                            <button type="submit">Book Your Table</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="gallery" class="gallery-section">
+                <h2>Restaurant Images</h2>
+                <div class="gallery-images">
+                    <img src="../Images/gallery-3.jpg" alt="Gallery Image">
+                    <img src="../Images/about-bg.jpg" alt="Gallery Image">
+                    <img src="../Images/about (1).jpg" alt="Gallery Image">
+                    <img src="../Images/gallery-1.jpg" alt="Gallery Image">
+                </div>
+            </section>
+
+            <section id="testimonials" class="testimonials-section">
+                <h2>What Says Our Customers</h2>
+                <div class="testimonials">
+                    <div class="testimonial-container">
+                        <div class="testimonial">
+                            <img src="../Images/food_profile_pic_1.jpg" alt="Customer Image">
+                            <p>"The food here is amazing! The ambiance and service are top-notch."</p>
+                            <span>- Ayushi Sarvaiya</span>
+                        </div>
+                        <div class="testimonial">
+                            <img src="../Images/food_profile_pic.jpg" alt="Customer Image">
+                            <p>"A wonderful dining experience. Highly recommend the seafood platter."</p>
+                            <span>- Ayush Sarvaiya</span>
+                        </div>
+                        <div class="testimonial">
+                            <img src="../Images/food_profile_pic.jpg" alt="Customer Image">
+                            <p>"A wonderful dining experience. Highly recommend the seafood platter."</p>
+                            <span>- Ayush Sarvaiya</span>
+                        </div>
+                        <div class="testimonial">
+                            <img src="../Images/food_profile_pic_1.jpg" alt="Customer Image">
+                            <p>"The food here is amazing! The ambiance and service are top-notch."</p>
+                            <span>- Ayushi Sarvaiya</span>
+                        </div>
+                    </div>
+                </div>
+            </section>            
+
+            <section id="contact" class="contact-section">
+                <h2>Contact Us...</h2>
+                <div class="contact-form">
+                    <form id="contact-form" action="#" method="post">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" name="contact-name" required>
+            
+                        <label for="contact-email">Your Email</label>
+                        <input type="email" id="contact-email" name="contact-email" required>
+            
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" name="contact-subject" required>
+            
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="contact-message" rows="4" required></textarea>
+            
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+            
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-section links">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section contact">
+                        <h2>Contact Us</h2>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> 1234 RESTAURANTLY, Anand</li>
+                            <li><i class="fas fa-phone-alt"></i> +123 456 789</li>
+                            <li><i class="fas fa-envelope"></i> info@restaurant.com</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section social">
+                        <h2>Follow Us</h2>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Restaurant. All Rights Reserved.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="homepage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="User_profile.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class="user-menu"><a href="../Homepage/homepage.html">Home</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#about">About Us</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#services">Services</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#menu">Menu</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#chef">Our Chefs</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#reservation">Book your table</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#gallery">Restaurant Images</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#testimonials">Customer Review</a></li>
+                    <li class="user-menu"><a href="../Homepage/homepage.html#contact">Contact Us</a></li>
+                    <li class="user-menu" style="border-top: 1px solid gray; padding-top: 10px; margin-top: 10px;">
+                        <a href="#" id="user-menu-toggle">User <span class="toggle-icon">+</span></a>
+                        <ul class="submenu">
+                            <li><a href="../User Profile/User_profile.html">Profile</a></li>
+                            <li><a href="../User List/User_list_section.html">List</a></li>
+                            <li><a href="../Create User/Create_user.html">Create</a></li>
+                            <li><a href="../User Account/User_account.html">Account</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        
+            <div class="logout">
+                <button id="logout-btn">Logout</button>
+            </div>
+        </aside>
+        
+        <main class="profile-section">
+            <header class="profile-header">
+                <div class="profile-cover">
+                    <!-- <img src="cover.jpg" alt="Profile Cover"> -->
+                </div>
+                <div class="profile-details">
+                    <img src="../Images/avatar_1.webp" alt="User Avatar" class="profile-avatar">
+                    <div class="profile-info">
+                        <h1>Ayush Sarvaiya</h1>
+                        <p>CTO</p>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <h3>1,947</h3>
+                            <p>Follower</p>
+                        </div>
+                        <div class="stat">
+                            <h3>9,124</h3>
+                            <p>Following</p>
+                        </div>
+                    </div>
+                </div>
+                <nav class="profile-nav">
+                    <ul>
+                        <li><a href="#" class="active">Profile</a></li>
+                        <li><a href="#">Followers</a></li>
+                        <li><a href="#">Friends</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="profile-content">
+                <div class="about-section">
+                    <h2>About</h2>
+                    <p>Tart I love sugar plum I love oat cake. Sweet roll caramels I love jujubes. Topping cake wafer..</p>
+                    <ul class="contact-info">
+                        <li>📍 Live at United Kingdom</li>
+                        <li>✉️ ashlynn.ohara62@gmail.com</li>
+                        <li>🏢 CTO at Gleicher, Mueller and Tromp</li>
+                        <li>🎓 Studied at Nikolaus - Leuschke</li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://www.instagram.com">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                        <li><a href="https://www.twitter.com">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="post-section">
+                    <div class="create-post">
+                        <textarea placeholder="Share what you are thinking here..."></textarea>
+                        <input type="file" id="media-input" accept="image/*,video/*" style="display: none;">
+                        <div class="post-actions">
+                            <button id="media-btn">Image/Video</button>
+                            <button>Streaming</button>
+                            <button class="post-btn">Post</button>
+                        </div>
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="post-header">
+                                <div class="user-image">
+                                    <img src="../Images/avatar_1.webp" alt="User Image">
+                                </div>
+                                <div class="post-info">
+                                    <h3>Jaydon Frankie</h3>
+                                    <p>22 Jun 2024</p>
+                                </div>
+                            </div>
+                            <p>The sun slowly set over the horizon, painting the sky in vibrant hues of orange and pink.</p>
+                            <img src="../Images/post_1.webp" alt="Post Image">
+                            <div class="post-footer">
+                                <p class="like">❤️ 20</p>
+                                <p>💬 17</p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post-header">
+                                <div class="user-image">
+                                    <img src="../Images/avatar_1.webp" alt="User Image">
+                                </div>
+                                <div class="post-info">
+                                    <h3>Jaydon Frankie</h3>
+                                    <p>02 Jun 2024</p>
+                                </div>
+                            </div>
+                            <p>The sun slowly set over the horizon, painting the sky in vibrant hues of orange and pink.</p>
+                            <img src="../Images/post_2.webp" alt="Post Image">
+                            <div class="post-footer">
+                                <p class="like">❤️ 35</p>
+                                <p>💬 22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="User_profile.js"></script>
+</body>
+</html>
